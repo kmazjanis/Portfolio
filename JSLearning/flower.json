@@ -1,0 +1,27 @@
+{
+    "name":"John Harris",
+    "age":30,
+    "flower":{
+        "col":"pink",
+        "type":"lilly"
+    },
+    "children":["Larry","Nicol"]
+
+
+"people":
+[
+    {
+     "name": "Brad",
+     "age" : 12
+    },
+    {
+     "name": "Lilly",
+     "age": 22
+    },
+    {
+     "name": "Sally",
+     "age": 99
+    }
+ ]
+
+}

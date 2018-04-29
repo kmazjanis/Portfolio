@@ -1,0 +1,106 @@
+/* this grid is for phone :) */
+.grid{
+    background-color:#f7f2f2; 
+    text-decoration-color: rgb(4, 108, 192);
+    
+    font-size: 15px;
+    line-height: 1.2;
+    display: grid;
+    grid-template-columns: 30% 1fr 30%;
+    grid-template-rows: 50px 1fr 75px;
+    grid-template-areas: 
+    "title title title"
+    "content content content"
+    "footer footer footer";
+}
+
+
+
+
+/* pc */
+
+.title{
+    grid-area: title;
+    background-color: rgba(34, 139, 34, 0.705);
+}
+
+
+.content{
+    grid-area: content;
+  
+
+}
+
+.footer{
+    grid-area: footer;
+    background-color: rgba(211, 187, 51, 0.712);
+}
+
+@media screen and (min-width: 736px){
+    .grid{
+        display: grid;
+        grid-template-columns: 30% 1fr 1fr 1fr 30%;
+        grid-template-rows: 50px 1fr 75px;
+        grid-template-areas: 
+        "title title title title title"
+        ". content content content ."
+        "footer footer footer footer footer";
+    }
+}
+
+.seperation{
+    border-bottom-width: 3px;
+    border-bottom-color: rgba(211, 187, 51, 0.678);
+    border-bottom-style: solid;
+}
+
+.btn{
+	border: none;
+	font-family: inherit;
+	font-size: 13px;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 4px 9px;
+	display: inline-block;
+	margin: 5px 5px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 800;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.103);
+}
+
+/* */
+.btn-1 {
+	border: 2px solid rgba(20, 180, 6);
+	color: rgba(20, 180, 6);
+}
+
+.btn-1a:hover,
+.btn-1a:active {
+	color: #ffffff;
+	background: rgba(20, 180, 6);
+}
+
+
+.btn-2 {
+	border: 2px solid rgb(14, 84, 175);
+	color: rgba(14, 84, 175);
+}
+
+.btn-2a:hover,
+.btn-2a:active {
+	color: #ffffff;
+	background: rgba(14, 84, 175);
+}
+
+li{
+    list-style-image:url(icon01so.png);
+    
+    
+}
