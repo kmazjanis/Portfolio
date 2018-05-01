@@ -15,35 +15,45 @@
 }
 
 .stext{
-    font-family: Calibri;
+    font-family: Calibri, Apercu Pro, sans-serif;
     font-size: 2vw;
     text-shadow: 1px 1px 2px rgb(138, 138, 138);
     display: flex;
     justify-content: start;
-    padding: 10vh 0 0 4.5vw;
-    line-height: 10%;
+    padding: 11vh 0 0 4.5vw;
+    line-height: 40%;
 }
 
 
 .ltext h1{
-    font-family: Calibri;
+    font-family: Calibri, Apercu Pro, sans-serif;
     /* font-size: calc(14px + (70 - 14) * ((100vw - 350px) / (1600 - 300))); */
     font-size: 10vw;
     text-shadow: 1px 1px 2px rgb(138, 138, 138);
     display: flex;
     justify-content: start;
     color:black;
-    line-height: 80%;
+    line-height: 90%;
     padding-left: 3.8vw;
     
 }
 
+.text-block {
+    position: absolute;
+    bottom: 200px;
+    right: 200px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
 .pics{
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 50px;
+    
     }
 
 .pics img{
@@ -58,7 +68,7 @@
 
 
 .pic-des{
-    
+    position: relative;
 }
 
 .pre-footer{
