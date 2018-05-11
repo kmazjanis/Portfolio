@@ -137,7 +137,7 @@ function clickCounterReset(){
         d3.select('NR10')
          .data(dataset)
          .enter()
-         .append('div')
+         .append('asd')
          //.text('Random text :)');
          .text(function(d) { return d; });
 
