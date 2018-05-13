@@ -273,6 +273,11 @@ a { color: inherit; }
     border-bottom-color: rgba(211, 187, 51, 0.678);
     border-bottom-style: solid;
     padding: 1.4vw 0 0.5vw 0.5vw;
+   
+}
+
+.seperation p{
+    font-weight: 600;
 }
 
 .btn{
