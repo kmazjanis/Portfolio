@@ -1,0 +1,315 @@
+
+
+.grid{
+    font-family: Verdana,sans-serif;
+    font-size: 16px;
+    background-color: #F2C94C;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 8.5vw 0% 40px 60px;
+
+    /* grid-template-areas:
+    "stext stext stext stext"
+    "ltext ltext ltext ltext"
+    "pics pics pics pics pics"
+    "footer footer footer footer footer "; */
+}
+
+.stext{
+    font-family: Calibri;
+    font-size: 2vw;
+    text-shadow: 1px 1px 2px  rgb(237,230,213);
+    display: flex;
+    justify-content: start;
+    padding: 10vh 0 0 4.5vw;
+    line-height: 10%;
+}
+
+
+.ltext h1{
+    font-family: Calibri;
+    /* font-size: calc(14px + (70 - 14) * ((100vw - 350px) / (1600 - 300))); */
+    font-size: 10vw;
+    text-shadow: 1px 1px 2px  rgb(237,230,213) ;
+    display: flex;
+    justify-content: start;
+    color:black;
+    line-height: 80%;
+    padding-left: 3.8vw;
+}
+
+
+.pics{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    }
+
+.pics img{
+    width: 30vw;
+  
+    }
+
+/* .pics img:hover{
+    width: 30vw;
+    opacity: 0.5;
+} */
+
+
+
+
+
+.pic-des{
+    position: relative;
+    background-color: rgb(220,35,66);
+}
+
+/* Pic overlay animation from bottom */
+
+.overlay{
+    position: absolute;
+    transition: all .5s ease;
+    opacity: 0;
+   
+}
+
+
+
+.pictextbot{
+    color: rgb(237,230,213) ;
+    font-family: Helvetica, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1vw;
+    text-align: center;
+    line-height: 1.1;
+    text-shadow: 0.5px 0.5px 0.5px rgb(7, 0, 0);
+}
+
+
+
+
+.overlayBot{
+    height: 0;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+   
+}
+
+/* .pic-des:hover .overlayBot{
+    
+} */
+
+.pic-des:hover .overlay{
+    width: 100%;
+    opacity: 0.95;
+    height:15%;
+    background-color: rgb(220,35,66);
+    
+}
+
+.pic-des:hover .image{
+   
+    opacity: 0.9;
+    
+    
+}
+
+/* pic overlay animation from top */
+
+.overlay2{
+    position: absolute;
+    transition: all .5s ease;
+    opacity: 0;
+   
+}
+
+
+.overlayBot2{
+    height: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    
+   
+}
+
+.pic-des:hover .overlay2{
+    width: 100%;
+    opacity: 0.95;
+    height: 8%;
+    background-color: rgb(220,35,66);
+}
+
+.pictexttop{
+    color:  rgb(237,230,213);
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.3vw;
+    text-shadow: 0.5px 0.5px 0.5px rgb(7, 0, 0);
+}
+
+/* Other */
+
+.pre-footer{
+    background-color: #f2f2f2;
+    padding-right: 4vw;
+    justify-content: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.pre-footer i{
+    font-size: 1.8vw;
+    padding-left: 0.4em;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px; 
+}
+
+.pre-footer i:hover{
+    font-size: 1.8vw;
+    padding-left: 0.4em;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px; 
+    color: #6E3270;;
+    
+}
+a { color: inherit; } 
+
+
+
+
+/* for JS part */
+
+/* this grid is for phone :) */
+.grid-js-part{
+    background-color:#f7f2f2; 
+    text-decoration-color: rgb(4, 108, 192);
+    font-size: 15px;
+    line-height: 1.2;
+    display: grid;
+    grid-template-columns: 30% 1fr 30%;
+    grid-template-rows: 50px 1fr 75px;
+    grid-template-areas: 
+    "title title title"
+    "content content content"
+    "footer footer footer";
+}
+
+
+
+
+/* pc */
+
+.title{
+    grid-area: title;
+    background-color: rgba(34, 139, 34, 0.705);
+}
+
+
+.content{
+    grid-area: content;
+  
+
+}
+
+.footer{
+    grid-area: footer;
+    background-color: rgba(211, 187, 51, 0.712);
+}
+
+.page-seperator{
+    grid-area: page-seperator;
+    
+    background-image: url("img/trees.jpg");
+    width: 100%;
+    
+      
+}
+
+.page-seperator img{
+    width: 100%;
+}
+
+
+@media screen and (min-width: 736px){
+    .grid-js-part{
+        display: grid;
+        grid-template-columns: 30% 1fr 1fr 1fr 30%;
+        grid-template-rows: 200px 50px 1fr 75px;
+        grid-template-areas: 
+        "page-seperator page-seperator page-seperator page-seperator page-seperator"
+        "title title title title title"
+        ". content content content ."
+        "footer footer footer footer footer";
+    }
+}
+
+.seperation{
+    border-bottom-width: 3px;
+    border-bottom-color: rgba(211, 187, 51, 0.678);
+    border-bottom-style: solid;
+}
+
+.btn{
+	border: none;
+	font-family: inherit;
+	font-size: 13px;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 4px 9px;
+	display: inline-block;
+	margin: 5px 5px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 800;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.103);
+}
+
+/* */
+.btn-1 {
+	border: 2px solid rgba(20, 180, 6);
+	color: rgba(20, 180, 6);
+}
+
+.btn-1a:hover,
+.btn-1a:active {
+	color: #ffffff;
+	background: rgba(20, 180, 6);
+}
+
+
+.btn-2 {
+	border: 2px solid rgb(14, 84, 175);
+	color: rgba(14, 84, 175);
+}
+
+.btn-2a:hover,
+.btn-2a:active {
+	color: #ffffff;
+	background: rgba(14, 84, 175);
+}
+
+li{
+    list-style-image:url(icon01so.png);
+    
+    
+}
+
+

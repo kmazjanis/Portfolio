@@ -1,0 +1,43 @@
+.grid{
+    font-family: Verdana,sans-serif;
+    font-size: 16px;
+    background-color: #F2C94C;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20% 20% 20% 20%;
+    grid-template-areas: 
+    "stext stext stext stext stext"
+    "ltext ltext ltext ltext ltext"
+    "pics pics pics pics pics"
+    "footer footer footer footer footer ";
+}
+
+.stext{
+    font-family: Calibri;
+    font-size: 14px;
+    letter-spacing: 4px;
+    line-height: 1px;
+    grid-area: stext;
+    padding: 40px 0 0 13px;
+    text-shadow: 1px 1px 2px rgb(138, 138, 138)
+}
+
+.ltext h1{
+    font-family: Calibri;
+    font-size: 45px;
+    letter-spacing: 12px;
+    grid-area: ltext;
+    padding: 0 0 0 9px;
+    text-shadow: 1px 1px 2px rgb(138, 138, 138)
+}
+
+.pics{
+    grid-area: pics;
+    
+    
+}
+
+.footer{
+    grid-area: footer;
+    background-color: rgba(34, 101, 139, 0.705);
+}

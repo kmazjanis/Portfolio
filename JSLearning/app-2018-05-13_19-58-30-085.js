@@ -10,7 +10,7 @@ console.log('Testing loop, from 0 to 4, console.log()+var: ' + name)
 
 for (let i = 0; i < 4; i++) {
     
-    document.getElementById("NR2Data").innerHTML += ("2. Testing loop from 0 to 4, + var result: " + i + " - " + name + "<br>")
+    document.getElementById("NR2").innerHTML += ("2. Testing loop from 0 to 4, + var result: " + i + " - " + name + "<br>")
 
 }
 
@@ -169,18 +169,7 @@ function clickCounterReset(){
         function reverseString(str) {
             var strvar = str;
             var reversed = strvar.split('').reverse().join('');
-            document.getElementById('NR13Data').innerHTML += ("String: " + str + "</br>");
-            document.getElementById('NR13Data').innerHTML += ("Reversed var string: " + reversed + "</br>");
-            return document.getElementById('NR13Data').innerHTML += ("Reversed string parameter: " + str.split('').reverse().join(''));
+            document.getElementById('NR13Data').innerHTML += ("Reversed: " + reversed + "</br>");
+            return document.getElementById('NR13Data').innerHTML += (str.split('').reverse().join(''));
          };
-          reverseString("Hello");
-
-
-
-          function reversedMuch(){
-            var reversed2 = document.getElementById("reversetext").value;
-            var reversed3 = reversed2.split('').reverse().join('');
-            document.getElementById('demo').innerHTML += ("Reversed String: " + reversed3 + "</br>");
-            
-           
-            };
+          reverseString("hello");
