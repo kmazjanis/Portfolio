@@ -186,12 +186,14 @@ function clickCounterReset(){
             var getNumberFacto = document.getElementById("factorText").value;
             var startNumber = getNumberFacto;
             for (i=1; getNumberFacto >= 1; getNumberFacto--){
+
+                result = startNumber * getNumberFacto;
                
-                console.log(result);
+             
                 
             };
-            
-            
+            return result;
+            console.log(getNumberFacto);
           
         };
 

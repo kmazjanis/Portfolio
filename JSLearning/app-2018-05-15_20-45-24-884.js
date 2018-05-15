@@ -184,14 +184,17 @@ function clickCounterReset(){
             //14. Factorialize Number
         function factorializeThis(){
             var getNumberFacto = document.getElementById("factorText").value;
-            var startNumber = getNumberFacto;
-            for (i=1; getNumberFacto >= 1; getNumberFacto--){
-               
+
+            for (getNumberFacto >= 1; getNumberFacto--){
+                
+
+                result = result * getNumberFacto;
+                return result;
                 console.log(result);
                 
             };
             
-            
+           
           
         };
 
