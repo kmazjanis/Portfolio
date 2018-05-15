@@ -173,7 +173,7 @@ function clickCounterReset(){
             document.getElementById('NR13Data').innerHTML += ("Reversed var string: " + reversed + "</br>");
             return document.getElementById('NR13Data').innerHTML += ("Reversed string parameter: " + str.split('').reverse().join(''));
          };
-          reverseString("Hello");
+          reverseString("Helloz");
 
 
 
@@ -181,6 +181,5 @@ function clickCounterReset(){
             var reversed2 = document.getElementById("reversetext").value;
             var reversed3 = reversed2.split('').reverse().join('');
             document.getElementById('demo').innerHTML += ("Reversed String: " + reversed3 + "</br>");
-            
-           
+        
             };
