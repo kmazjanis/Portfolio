@@ -175,12 +175,19 @@ function clickCounterReset(){
          };
           reverseString("Hello");
 
-
-
           function reversedMuch(){
             var reversed2 = document.getElementById("reversetext").value;
             var reversed3 = reversed2.split('').reverse().join('');
             document.getElementById('demo').innerHTML += ("Reversed String: " + reversed3 + "</br>");
-            
-           
             };
+
+            //14. Factorialize Number
+        function factorializeThis{
+            var GetFactoNumber = document.getElementById("factorText").value;
+            for(var i=0; i<5; i++){
+                console.log(i);
+            }
+            var GetFactoNumber++ > GetFactoNumber.length
+
+            x=(x+1) * GetFactoNumber  
+        }
