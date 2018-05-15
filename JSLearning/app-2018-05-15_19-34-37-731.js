@@ -185,32 +185,32 @@ function clickCounterReset(){
         function factorializeThis(){
             var getNumberFacto = document.getElementById("factorText").value;
 
-            for (i = 1; getNumberFacto >= 1; getNumberFacto--){
-                
-                
-                console.log(getNumberFacto);
-                
-            };
+            var result = getNumberFacto;
+            if(getNumberFacto === 0)
+              return 1;
             
-           
-          
+            while(getNumberFacto > 1){
+            getNumberFacto--;
+            result = result * getNumberFacto;
+            console.log(result);
+            }
+            
+          return result;
+          console.log(result);
+          document.getElementById('factoOutput').innerHTML += ("Rrrrr: " + result + "</br>");
         };
 
 
 
-
-
-     //     var result = getNumberFacto;
-        //     if(getNumberFacto === 0)
-        //       return 1;
+            // if(getNumberFacto === 0)
+            // return 1;
+            // var resultFacto;
+            // while(getNumberFacto > 1){
+            //     getNumberFacto--;
+            //     resultFacto = resultFacto * getNumberFacto;
+            //     document.getElementById('factoOutput').innerHTML += ("Reversed String: " + resultFacto + "</br>");    
+            // }
             
-        //     while(getNumberFacto > 1){
-        //     getNumberFacto--;
-        //     result = result * getNumberFacto;
-        //     console.log(result);
-        //     }
-            
-        //   return document.getElementById('zzz').innerHTML += ("Factorialized number: " + result + "</br>");
 
 
         

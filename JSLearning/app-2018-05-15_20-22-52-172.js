@@ -185,12 +185,12 @@ function clickCounterReset(){
         function factorializeThis(){
             var getNumberFacto = document.getElementById("factorText").value;
 
-            for (i = 1; getNumberFacto >= 1; getNumberFacto--){
+            for (i = 1, getNumberFacto >= 1, getNumberFacto--){
                 
+                result = i;
+                console.log(result);
                 
-                console.log(getNumberFacto);
-                
-            };
+            }
             
            
           

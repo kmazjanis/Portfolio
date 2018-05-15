@@ -187,8 +187,8 @@ function clickCounterReset(){
 
             for (i = 1; getNumberFacto >= 1; getNumberFacto--){
                 
-                
-                console.log(getNumberFacto);
+                result = i;
+                console.log(result);
                 
             };
             
