@@ -201,16 +201,19 @@ function clickCounterReset(){
                 startNumber = startNumber * getNumberFacto;
             }
             
-                
-                return document.getElementById('NR14Data').innerHTML += ('<div id="FactoResult">' + startNumber + '</div>');
-                
+                return document.getElementById('FactoResult').innerHTML += ('<div id="FactoResult"> This is the result man: <b>' + startNumber + '<b></div>');
+            
             };
             
-          
+         function deleteFacto(){
+            document.getElementById('FactoResult').innerHTML = "";
+         }
+
+
+
         function factorAndDelete(){
-            delete2();
+            deleteFacto();
             factorializeThis();
-            
         };
            
 
