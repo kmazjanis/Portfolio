@@ -12,28 +12,28 @@ for (let i = 0; i < 4; i++) {
     
     document.getElementById("NR2Data").innerHTML += ("2. Testing loop from 0 to 4, + var result: " + i + " - " + name + "<br>")
 
-}
+};
 
         //3. Statement - Const.
 
 const PI = 3.14;
 function constant(){
     PI = 7;
-}
+};
 
 
-    document.getElementById("NR3").innerHTML = ("3. Statement - Const.: " + PI)
+    document.getElementById("NR3").innerHTML = ("3. Statement - Const.: " + PI);
 
 
         //4. Adding green background color to paragraph.
 
 function fromTransparentToGreen(){
     document.querySelector(".NR4").style.backgroundColor = "green";
-}
+};
 
 function backToTransparent(){
     document.querySelector(".NR4").style.backgroundColor = "white";
-}
+};
 
         //5. Nod list length. Counting all paragraphs.
 
@@ -54,11 +54,11 @@ function clickCounter(){
         }
         document.getElementById("counterResult").innerHTML = "You have clicked the button " + localStorage.clickcount + " times.";
     }
-}
+};
 
 function clickCounterReset(){
     document.getElementById("counterResult").innerHTML = localStorage.clear();
-}
+};
 
 
         //7. Variables/ Arrays / Loop
@@ -71,7 +71,7 @@ function clickCounterReset(){
                 city: "boston"
             },
             children:["Brian", "Nocholas"]
-        }
+        };
 
         console.log(person.children);
 
@@ -95,7 +95,7 @@ function clickCounterReset(){
         var output = '';
         for(var i = 0; i < people.length; i++){
             output += '<li>'+people[i].name+'</li>';
-        }
+        };
         document.getElementById('people').innerHTML = output;
 
         
@@ -105,13 +105,13 @@ function clickCounterReset(){
         for(var i=0; i<5; i++){
             console.log(i);
          //   document.getElementById('outsideLoop').innerHTML += (i);
-        }
+        };
         
         var outside = 1;
         for(; outside<4; outside++)
         {
             document.getElementById('outsideLoop').innerHTML += (outside);
-        }
+        };
         
        
          //9. LOOP IN statement
@@ -121,12 +121,12 @@ function clickCounterReset(){
                 size: "medium",
                 color: "whiite",
                 number: 153
-         }
+         };
 
          for(attribute in sharky) {
             document.getElementById('NR9Data').innerHTML += (attribute + ":" + sharky[attribute] + " ");
             
-         }
+         };
 
       
          //10. D3 SVG
@@ -147,8 +147,8 @@ function clickCounterReset(){
         var CardsArray = ["heart", "spade", "club", "diamond"];
         var PicsArray = ["A", "K", "Q", "J", "T", "9", "8", "7", "6", "5", "4", "3", "2"];
        // var RandomNr = Math.floor((Math.random() * 9) + 2);
-        var RandomCard = CardsArray[Math.floor(Math.random() * CardsArray.length)]
-        var RandomPic = PicsArray[Math.floor(Math.random() * PicsArray.length)]
+        var RandomCard = CardsArray[Math.floor(Math.random() * CardsArray.length)];
+        var RandomPic = PicsArray[Math.floor(Math.random() * PicsArray.length)];
 
          document.getElementById('NR11Data').innerHTML += (RandomPic + " " + RandomCard);
 
@@ -182,34 +182,39 @@ function clickCounterReset(){
             };
 
             //14. Factorialize Number
+
+           
+           
+            
+
         function factorializeThis(){
+            
             var getNumberFacto = document.getElementById("factorText").value;
+            
             var startNumber = getNumberFacto;
-            for (i=1; getNumberFacto >= 1; getNumberFacto--){
-               
-                console.log(result);
+           
+            if (getNumberFacto === 0)
+            return 1;
+
+            while(getNumberFacto > 1){
+                getNumberFacto--;
+                startNumber = startNumber * getNumberFacto;
+            }
+            
+                
+                return document.getElementById('NR14Data').innerHTML += ('<div id="FactoResult">' + startNumber + '</div>');
                 
             };
             
-            
           
+        function factorAndDelete(){
+            delete2();
+            factorializeThis();
+            
         };
+           
 
 
-
-
-
-     //     var result = getNumberFacto;
-        //     if(getNumberFacto === 0)
-        //       return 1;
-            
-        //     while(getNumberFacto > 1){
-        //     getNumberFacto--;
-        //     result = result * getNumberFacto;
-        //     console.log(result);
-        //     }
-            
-        //   return document.getElementById('zzz').innerHTML += ("Factorialized number: " + result + "</br>");
 
 
         
