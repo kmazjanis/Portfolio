@@ -10,7 +10,7 @@ console.log('Testing loop, from 0 to 4, console.log()+var: ' + name)
 
 for (let i = 0; i < 4; i++) {
     
-    document.getElementById("NR2Data").innerHTML += ("2. Testing loop from 0 to 4, + var result: " + i + " - " + name + "<br>")
+    document.getElementById("NR2Data").innerHTML += ("2. Testing loop from 0 to 4, + var result: " + i + " - " + name + "<br>");
 
 };
 
@@ -29,11 +29,11 @@ function constant(){
 
 function fromTransparentToGreen(){
     document.querySelector(".NR4").style.backgroundColor = "green";
-};
+}
 
 function backToTransparent(){
     document.querySelector(".NR4").style.backgroundColor = "white";
-};
+}
 
         //5. Nod list length. Counting all paragraphs.
 
@@ -54,12 +54,11 @@ function clickCounter(){
         }
         document.getElementById("counterResult").innerHTML = "You have clicked the button " + localStorage.clickcount + " times.";
     }
-};
+}
 
 function clickCounterReset(){
     document.getElementById("counterResult").innerHTML = localStorage.clear();
-};
-
+}
 
         //7. Variables/ Arrays / Loop
 
@@ -126,7 +125,7 @@ function clickCounterReset(){
          for(attribute in sharky) {
             document.getElementById('NR9Data').innerHTML += (attribute + ":" + sharky[attribute] + " ");
             
-         };
+         }
 
       
          //10. D3 SVG
@@ -161,7 +160,7 @@ function clickCounterReset(){
                 bvar.bus.push(element);
             }
             console.log(element);
-        };
+        }
         busFunction(busTimes, myOptions);
         document.getElementById('NR12Data').innerHTML += (myOptions.bus);
 
@@ -172,52 +171,82 @@ function clickCounterReset(){
             document.getElementById('NR13Data').innerHTML += ("String: " + str + "</br>");
             document.getElementById('NR13Data').innerHTML += ("Reversed var string: " + reversed + "</br>");
             return document.getElementById('NR13Data').innerHTML += ("Reversed string parameter: " + str.split('').reverse().join(''));
-         };
+         }
           reverseString("Helloz");
 
           function reversedMuch(){
             var reversed2 = document.getElementById("reversetext").value;
             var reversed3 = reversed2.split('').reverse().join('');
             document.getElementById('demo').innerHTML += ("Reversed String: " + reversed3 + "</br>");
-            };
+            }
 
-            //14. Factorialize Number
-
-           
-           
-            
+        //14. Factorialize Number
 
         function factorializeThis(){
             
-            var getNumberFacto = document.getElementById("factorText").value;
-            
-            var startNumber = getNumberFacto;
-           
-            if (getNumberFacto === 0)
-            return 1;
+        var getNumberFacto = document.getElementById("factorText").value;
+        var startNumber = getNumberFacto;
+    
+        while(getNumberFacto > 1){
+            getNumberFacto--;
+            startNumber = startNumber * getNumberFacto;
+        }
 
-            while(getNumberFacto > 1){
-                getNumberFacto--;
-                startNumber = startNumber * getNumberFacto;
-            }
+        if (startNumber == 0){
+            startNumber = 1;
+        }
+
+        return document.getElementById('FactoResult').innerHTML += ('<div id="FactoResult"> This is the result man: <b>' + startNumber + '<b></div>');
             
-                return document.getElementById('FactoResult').innerHTML += ('<div id="FactoResult"> This is the result man: <b>' + startNumber + '<b></div>');
-            
-            };
+        }
             
          function deleteFacto(){
             document.getElementById('FactoResult').innerHTML = "";
          }
 
-
-
         function factorAndDelete(){
             deleteFacto();
             factorializeThis();
-        };
+        }
            
-
-
-
-
+        //15. Palindromes
         
+        function PalindromeThis(){
+            var getPalindromeText = document.getElementById("PalindromeText").value;
+            var removeSymbols = /[\W_]/g;
+            var smoothText = getPalindromeText.toLowerCase().replace(removeSymbols, '');
+            var reversedText = smoothText.split('').reverse().join('');
+
+            document.getElementById('PalindromeResult').innerHTML = "";
+            if(reversedText == smoothText){
+                return document.getElementById('PalindromeResult').innerHTML += ("<div id='PalindromeResult'><b>It's Palindrome<b></div>");
+            }
+            else{
+                return document.getElementById('PalindromeResult').innerHTML += ("<div id='PalindromeResult'><b>It's NOT Palindrome<b></div");
+            }
+        }
+
+
+        //16. Finding the longest word in sentence.
+
+        function FindLongestWord(){
+            let getPalindromeText = document.getElementById("FindLongestWordText").value;
+            let splitWords = getPalindromeText.split(' ');
+            let MaxLength = 0;
+        
+            for(i=0; i < splitWords.length; i++){
+                if(splitWords[i].length > MaxLength){
+                    MaxLength = splitWords[i].length;
+                }
+            }
+            document.getElementById('FindLongestWordRes').innerHTML = "";
+            return document.getElementById('FindLongestWordRes').innerHTML += (MaxLength);
+        }
+
+        //17. Change first letter to upper letter.
+
+        function UpperLetter(){
+            let getUpperLetter = document.getElementById("UpperLetterText").value;
+            let modifiedUpper = getUpperLetter.replace(/\S*/g, 'ww');
+        console.log(modifiedUpper);
+        }
