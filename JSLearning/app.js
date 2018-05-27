@@ -247,6 +247,8 @@ function clickCounterReset(){
 
         function UpperLetter(){
             let getUpperLetter = document.getElementById("UpperLetterText").value;
-            let modifiedUpper = getUpperLetter.replace(/\S*/g, 'ww');
+            let modifiedUpper = getUpperLetter.replace(/a/, 'A');
         console.log(modifiedUpper);
         }
+
+       
