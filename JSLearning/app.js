@@ -247,9 +247,13 @@ function clickCounterReset(){
 
         function UpperLetter(){
             let getUpperLetter = document.getElementById("UpperLetterText").value;
-            let lower = getUpperLetter.toLowerCase();
-
+            let lower = getUpperLetter.replace(/\w\S*/g, function (lol){ 
+                return lol;
+            });
+            
         console.log(lower);
         }
 
+
     
+        
