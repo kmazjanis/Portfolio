@@ -247,11 +247,11 @@ function clickCounterReset(){
 
         function UpperLetter(){
             let getUpperLetter = document.getElementById("UpperLetterText").value;
-            let lower = getUpperLetter.replace(/\w\S*/g, function (lol){ 
-                return lol;
-            });
+            let lower = getUpperLetter.toLowerCase().replace(/(^|\s)\w/g, (L) => L.toUpperCase());
             
-        console.log(lower);
+            document.getElementById('UpperLetterRes').innerHTML = "";
+            return document.getElementById('UpperLetterRes').innerHTML += (lower);
+      
         }
 
 
