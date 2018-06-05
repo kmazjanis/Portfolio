@@ -255,5 +255,39 @@ function clickCounterReset(){
         }
 
 
-    
+        //18.Biggest number in array
+        function largestOne() {
+         
+          }
+         
+
+        //  var arr = [[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]];
+        // for (let i=0; i < arr.length; i++){
+        //     iz = i;
+        //     if(iz > i){
+        //         return iz;
+        //     }
+        //     else{
+        //         return i;
+        //     }
+
+        //     for(let j=0; j < arr[i].length; j++){
+
+        //         document.getElementById('ArrayNumberResult').innerHTML += (arr[i][j] + "</br>"); 
+        //     }
+            
+            
+        // }
+         
+        //19. Short if else statement or condition operator. Check if number positive, negative or zero.
+        function CondOper(){
+            let getNumber = document.getElementById("CondOperText").value;
+            let getNumberRes = (getNumber == 0) ? "zero!" : (getNumber > 0) ? "positive" : "negative";
+            document.getElementById('CondOperResult').innerHTML = "";
+            return document.getElementById('CondOperResult').innerHTML += (getNumberRes);
+      
+        }
+         
+         
+
         
