@@ -288,8 +288,25 @@ function clickCounterReset(){
       
         }
          
-         
+       
 
-    
-     
+        console.clear();
         
+
+
+          
+        function zeroArray(m, n) {
+        
+            let newArray = [];
+            let row = [];
+            for (let i = 0; i < m; i++) {
+              newArray.unshift(row);
+                }
+                for (let j = 0; j < n; j++) {
+                    row.push(j);
+                }
+            return newArray;
+          }
+          
+          let matrix = zeroArray(2, 3);
+          console.log(matrix);
