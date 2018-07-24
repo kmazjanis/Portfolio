@@ -280,33 +280,51 @@ function clickCounterReset(){
         // }
          
         //19. Short if else statement or condition operator. Check if number positive, negative or zero.
-        function CondOper(){
-            let getNumber = document.getElementById("CondOperText").value;
-            let getNumberRes = (getNumber == 0) ? "zero!" : (getNumber > 0) ? "positive" : "negative";
-            document.getElementById('CondOperResult').innerHTML = "";
-            return document.getElementById('CondOperResult').innerHTML += (getNumberRes);
+        // function CondOper(){
+        //     let getNumber = document.getElementById("CondOperText").value;
+        //     let getNumberRes = (getNumber == 0) ? "zero!" : (getNumber > 0) ? "positive" : "negative";
+        //     document.getElementById('CondOperResult').innerHTML = "";
+        //     return document.getElementById('CondOperResult').innerHTML += (getNumberRes);
       
-        }
+        // }
          
        
 
-        console.clear();
         
 
 
           
-        function zeroArray(m, n) {
+        // function zeroArray(m, n) {
         
-            let newArray = [];
-            let row = [];
-            for (let i = 0; i < m; i++) {
-              newArray.unshift(row);
-                }
-                for (let j = 0; j < n; j++) {
-                    row.push(j);
-                }
-            return newArray;
-          }
+        //     let newArray = [];
+        //     let row = [];
+        //     for (let i = 0; i < m; i++) {
+        //       newArray.unshift(row);
+        //         }
+        //         for (let j = 0; j < n; j++) {
+        //             row.push(j);
+        //         }
+        //     return newArray;
+        //   }
           
-          let matrix = zeroArray(2, 3);
-          console.log(matrix);
+        //   let matrix = zeroArray(2, 3);
+        //   console.log(matrix);
+          
+        
+
+
+
+
+
+var heroes = [
+	{name: "Batman", franchise: "DC"},
+	{name: "Ironman", franchise: "Marvel"},
+	{name: "Thor", franchise: "Marvelz"},
+	{name: "Superman", franchise: "DC"}
+];
+
+var marvelHeroes =  heroes.filter(function(hero) {
+    
+	return hero.franchise == "Marvel";
+    
+});
